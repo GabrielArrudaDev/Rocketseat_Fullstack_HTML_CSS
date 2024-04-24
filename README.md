@@ -56,19 +56,22 @@ E cada um deles irá observar o :
 `}`
 
 `.square {`
-  - animation-name: move, blink;
 
-  - animation-duration: 1s, 200ms;
+    - animation-name: move, blink;
 
-  - animation-fill-mode: forwards;
+    - animation-duration: 1s, 200ms;
 
-  - animation-direction: alternate;
+    - animation-fill-mode: forwards;
 
-  - animation-iteration-count: infinite;
+    - animation-direction: alternate;
 
-  - /* animation-delay: 2s; */
+    - animation-iteration-count: infinite;
 
-  - animation-timing-function: steps(10);
+    - /* animation-delay: 2s; */
+
+    - animation-timing-function: steps(10);
+
+`}`
 
 ---
 *Shorthand:*
@@ -80,29 +83,27 @@ E cada um deles irá observar o :
 `}`
 
 `.square:hover {`
-  - animation-play-state: paused;
+    - animation-play-state: paused;
 
 `}`
 
 `@keyframes move {`
-  - /* to */
-  - 100% {
-    - transform: translateX(calc(100vw - 100% - 16px));
 
-    }
+    - /* to */
+    - 100% {
+      - transform: translateX(calc(100vw - 100% - 16px));
+      }
 
 `}`
 
 `@keyframes blink {`
 
-  - 0%, 100% {
-    - opacity: 0.6;
+    - 0%, 100% {
+      - opacity: 0.6;
+      }
 
-    }
-
-  - 50% {
-    - opacity: 1;
-
-    }
+    - 50% {
+      - opacity: 1;
+      }
 
 `}`
